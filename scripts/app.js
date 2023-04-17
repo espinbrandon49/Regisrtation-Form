@@ -30,7 +30,7 @@ function submitInput() {
   }
 
   if (confirm.value != password.value) {
-    validateInput(confirm, !valid, "Passwords do not match match");
+    validateInput(confirm, !valid, "Passwords do not match");
   }
 }
 

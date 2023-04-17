@@ -1,5 +1,8 @@
-## Form Validator (
+## Form Validator 
+A simple modern client side form validation. 
 
-Simple client side form validation. Check requird, length, email and password match
+Check required length, email and password match.
 
-Tools used:  HTML, CSS, JavaScript
+Tools used:  HTML5, CSS, JavaScript
+
+![Alt text](images/screenshot.png)
