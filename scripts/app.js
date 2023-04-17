@@ -10,7 +10,10 @@ function formSubmittedSuccessfully() {
     (/.+@.+\.com/.test(email.value)) &&
     (password.value.length > 3 && password.value.length <= 12) &&
     (confirm.value == password.value)) {
-    document.querySelectorAll("input").forEach(e => e.value = "");
+    elements.forEach(e => {
+      e.value = ""
+      e.style.borderColor = "#f0f0f0";
+    });
     alert("You have successfully registered")
   }
 }
@@ -29,7 +32,7 @@ function submitInput() {
     validateInput(password, !valid, "Password must be between 3 and 12 characters");
   }
 
-  if (confirm.value != password.value) {
+  if (confirm.value != password.value || confirm.value.trim().length < 1) {
     validateInput(confirm, !valid, "Passwords do not match");
   }
 }
